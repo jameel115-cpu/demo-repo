@@ -1,0 +1,4 @@
+[
+  "tests/test_app.py::test_process_pdf_upload_rejects_non_pdf",
+  "tests/test_app.py::test_process_pdf_upload_success"
+]
