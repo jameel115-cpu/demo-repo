@@ -13,7 +13,6 @@ def process_pdf_upload(filename: str, content: bytes) -> dict:
     if not filename.endswith(".pdf"):
         raise ValueError("Only PDF files are allowed.")
 
-    os.makedirs(UPLOAD_DIR, exist_ok=True)
     file_path = os.path.join(UPLOAD_DIR, filename)
 
     with open(file_path, "wb") as f:
